@@ -1,11 +1,13 @@
 *{
+	font-family: myriad-pro,helvetica;
 	padding: 0;
 	margin: 0;
 }
 header{
 	height: 70px;
 	display: flex;
-	background-color: #dfdfdf;
+	background-color: #142433;
+	box-shadow: 5px 10px 8px #888888;
 }
 #logo{
 	width: 110px;
@@ -22,12 +24,43 @@ header{
 }
 .headerone{
 	font-size: 25px;
-	font-family: sans-serif;
+	
 	text-align: center;
+	color: aqua;
+	padding: 1px;
 }
 .header-p p{
 	float: left;
 	margin: 10px;
-	font-size: 4vw;
+	font-size: 30px;
 }
+@media screen and (max-width: 1000px){
+	div.header-p{
+		display: none;
+	}
+}
+@media screen and (max-width: 500px){
+	div#profile{
+		width: 700px;
+	}
+}
+#profile-image{
+	height: 62px;
+	width: 62px;
+	border-radius: 41px;
+	float: right;
+	margin: 3px;
+}
+.header-p, a{
+	text-decoration: none;
+	font-size: 30px;
+	color: aliceblue;
+}
+#setting{
+	height: 30px;
+	width: 30px;
+	margin-top: 23px;
+	float: right;
+}
+
 
