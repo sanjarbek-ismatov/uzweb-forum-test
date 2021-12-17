@@ -34,7 +34,7 @@ header{
 	margin: 10px;
 	font-size: 30px;
 }
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1012px){
 	div.header-p{
 		display: none;
 	}
@@ -44,23 +44,47 @@ header{
 		width: 700px;
 	}
 }
-#profile-image{
-	height: 62px;
-	width: 62px;
-	border-radius: 41px;
-	float: right;
-	margin: 3px;
-}
 .header-p, a{
 	text-decoration: none;
 	font-size: 30px;
 	color: aliceblue;
+	transition-duration: 1s;
+}
+.header-p p a:hover{
+	color: aqua;
 }
 #setting{
 	height: 30px;
 	width: 30px;
-	margin-top: 23px;
+	margin: 23px;
 	float: right;
+}
+#main-content{
+	display: flex;
+	height: 1000px;
+	overflow: hidden;
+}
+#main-contents{
+	height: 100%;
+	float: left;
+	width: 100%;
+}
+#menu{
+	height: 100%;
+	float: right;
+	width: 373px;
+}
+#copyright{
+	height: 77px;
+	width: 100%;
+}
+@media screen and (max-width: 1150px){
+	div#menu{
+		display: none;
+	}
+	div#main-contents{
+		width: 100%;
+	}
 }
 
 
